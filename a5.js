@@ -13,7 +13,7 @@
 // }
 
 let nota1 = 5.5
-let nota2 = 4
+let nota2 = 4 
 let nota3 = 2
 
 media = (nota1 + nota2 + nota3)/3
