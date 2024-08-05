@@ -8,3 +8,4 @@ for(let i=usuario; i<=100; i++){
     console.log(i)
     }
 }
+
