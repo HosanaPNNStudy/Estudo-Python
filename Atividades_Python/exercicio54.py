@@ -1,6 +1,6 @@
 funcionarios = []
 
-for i in range(0,2):
+for i in range(0,5):
     nome = input('Digite seu nome: ')
     salario = input('Digite seu salario: ')
     professor = input('Você professor? s ou n: ')
