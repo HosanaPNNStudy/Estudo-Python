@@ -14,8 +14,8 @@ body{
     text-align: center;
 }
 
-/* Menu */
-nav {
+/* Menu Principal*/
+nav.menu-principal {
     background-color: #576ada;
     color: #f5f5f5;
     padding-top: 5px;
@@ -24,7 +24,7 @@ nav {
     padding-right: 5px;
     text-align: center;
 }
-nav ul li{
+nav.menu-principal ul li{
     list-style: none;
     display: inline-block;
     font-size: 20px;
@@ -33,15 +33,27 @@ nav ul li{
     text-align: center;
     transition: background-color 0.5s;
 }
-nav ul li:hover, nav ul li a:hover{
+nav.menu-principal ul li:hover, nav.menu-principal ul li a:hover{
     background-color: #f5f5f5;
     color: #576ada;
 }
-nav ul li a {
+nav.menu-principal ul li a {
     color: #f5f5f5;
     text-decoration: none;
     transition: background-color 0.5s;
+}
+/*Menu Secundário*/
+nav.menu-secundario ul li{
+    list-style: none;
+    font-size: 20px;
+}
+nav.menu-secudanrio ul li a{
+    text-decoration: none;
+}
 
+/*Container*/ 
+.container{
+    display: flex;
 }
 
 /* Parte  Principal */
@@ -49,22 +61,31 @@ main{
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: justify;
+    width: 70%;
+    padding-right: 20px;
 }
 main section{
     margin-top: 15px;
 }
 main section article{
     margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 main section article span{
     font-size: 20px;
     font-style: italic;
 }
+figure{
+    margin-bottom: 10px;
+}
+aside{
+    text-align: justify;
+    width: 30%;
+}
 
 /* Rodapé */
 footer{
-    position: absolute;
-    bottom: 0px;
     max-width: 1200px;
     width: 100%;
     font-size: 20px;
