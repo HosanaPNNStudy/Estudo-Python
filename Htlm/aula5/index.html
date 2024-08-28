@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <!--Css externo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Meu blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.rj.senac.br/sobre-o-senac">Quem Somos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Postagens
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#frente-fria">Frente fria</a></li>
+                            <li><a class="dropdown-item" href="#sinusite">Sinusite ataca</a></li>
+                            <li><a class="dropdown-item" href="#">Calor está chegando</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fale Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Redes Sociais</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3 d-flex">
+        <!--Parte Principal do site-->
+        <main class="col-8 pe-4">
+            <header class="titulo-postagens">
+                <h2>Postagens mais recentes</h2>
+                <h3>Edições: Agosto/2024</h3>
+            </header>
+
+            <!--Artigos do site-->
+
+            <section>
+                <article class="artigo" id="frente-fria">
+                    <figure>
+                        <img src="imagens/imagem300x300-aula4.png" alt="Praia da Urca com o céu nublabo. Na areia está sentada uma moça conteplando a natureza." class="img-thumbnail rounded mx-auto d-block">
+                        <Figcaption class="text-center">Imagem1. frente-fria</Figcaption>
+                    </figure>
+
+                    <h2>Frente fria chegandono Rio de Janeiro</h2>
+                    <p>Lorem ipsum <span>Hosana Priscila</span> dolor sit amet consectetur adipisicing elit. Laudantium
+                        dolor corrupti maiores saepe
+                        consequatur iusto. Repellat ratione, ullam quos corrupti, veritatis iure modi totam nobis
+                        architecto
+                        deserunt facilis natus ut!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis architecto corporis
+                        repellendus at earum saepe consectetur, eum ea asperiores. Ullam harum eaque obcaecati rem
+                        voluptas
+                        et eius. Odio, quaerat.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, assumenda officiis iure
+                        consequuntur
+                        eligendi sequi praesentium rerum, at saepe a sapiente atque. Magnam quibusdam sint consectetur
+                        quos
+                        illum tenetur praesentium.</p>
+                </article>
+
+                <article class="sinusite" id="sinusite">
+                    <figure>
+                        <img src="imagens/imagem300x300-aula4.png" alt="Mulher com cara de dor, assoando o nariz" class="img-thumbnail rounded mx-auto d-block">
+                        <Figcaption class="text-center">Imagem2. Sinusite ataca</Figcaption>
+                    </figure>
+
+                    <h2>Sinusite atinge mulheres no Rio de Janeiro</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste commodi corrupti harum libero
+                        fugiat omnis, odit ducimus ex sint quibusdam quod dolorum consequatur veniam velit cum
+                        repudiandae ullam,
+                        molestias nostrum?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis molestias neque ad! Reiciendis
+                        ad nulla sit ut facere labore nihil? Eveniet explicabo magni ut, nobis tempore obcaecati
+                        molestiae dignissimos facilis?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta totam consequatur atque,
+                        incidunt dolorem aliquid illo. Voluptatum possimus perferendis veritatis iusto impedit minus?
+                        Odio itaque blanditiis a ducimus iure.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <!--Parte secundária do site-->
+        <aside class="col-4">
+            <h2>Outras Sessões</h2>
+            <nav class="menu-secundario">
+                <h3>Links Utéis</h3>
+                <ul>
+                    <li><a href="https://globo.com" target="_blank">Globo G1</a></li>
+                    <li><a href="https://rj.senac.br" target="_blank">Senac RJ</a></li>
+                    <li><a href="https://r7.com" target="_blank">Record R7</a></li>
+                </ul>
+            </nav>
+            <div class="autora">
+                <img src="imagens/imagem300x300-aula4.png"
+                    alt="Imagem da autora do blog. Hosana é uma preta mau humorada.Que está com a cara fechada mas continua linda" class="img-thumbnail rounded mx-auto d-block">
+                <h4>Hosana Nazarino</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quidem Fdolore nemo placeat quia.
+                    Vitae reprehenderit temporibus, modi voluptatibus voluptate esse vero harum optio exercitationem
+                    adipisci commodi corrupti dignissimos? Iste?
+                </p>
+            </div>
+
+            <!--Formulário-->
+            <div class="formulario">
+                <form action="form.html" method="get">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome">
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="digite seu email" required>
+                    <br>
+                    <textarea cols="20" rows="10">
+                        Digie seu texto...
+                    </textarea>
+                    <br>
+                    <button type="submit"> Enviar</button>
+                </form>
+
+            </div>
+        </aside>
+    </div>
+
+    <!--Rodapé do site-->
+    <footer>
+        <p>Meu Blog foi desenvolvido por <span>Hosana Nazarino</span>. &copy2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
