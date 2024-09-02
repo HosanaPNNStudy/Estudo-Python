@@ -8,10 +8,12 @@
     <!--Css externo-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="shortcut icon" href="imagens/miss.png" type="image/x-icon">
+    <link rel="shortcut icon" href="miss.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!--Cabeçalho-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Meu blog</a>
@@ -40,7 +42,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Fale Conosco</a>
+                        <a class="nav-link" href="faleconsco.html">Fale Conosco</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Redes Sociais</a>
@@ -55,56 +57,59 @@
     </nav>
 
     <!--Carrossel-->
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide mb-6 mt-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"
+                aria-current="true"></button>
         </div>
 
-        <div class="carousel-item active">
-           <img src="imagens/laptop-5673901_640.jpg" class="img-fluid w-100" style="max-height: 300px;">
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active fundo-imagem f1">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p class="opacity-75">Some representative placeholder content for the third slide of this
+                            carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
-        
-        <div class="carousel-item">
-            <img src="imagens/2149901787.jpg" class="img-fluid w-100" style="max-height: 300px;">
-             <div class="container">
-               <div class="carousel-caption text-end">
-                 <h1>One more for good measure.</h1>
-                 <p>Some representative placeholder content for the third slide of this carousel.</p>
-                 <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-               </div>
-             </div>
+
+            <div class="carousel-item fundo-imagem f2">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item fundo-imagem f3">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="carousel-item">
-            <img src="imagens/web-development-4202909_640.png" class="img-fluid w-100" style="max-height: 300px;">
-             <div class="container">
-               <div class="carousel-caption text-end">
-                 <h1>One more for good measure.</h1>
-                 <p>Some representative placeholder content for the third slide of this carousel.</p>
-                 <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-               </div>
-             </div>
-           </div>
 
-        </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
 
     <div class="container mt-3 d-flex">
         <!--Parte Principal do site-->
@@ -119,7 +124,9 @@
             <section>
                 <article class="artigo" id="frente-fria">
                     <figure>
-                        <img src="imagens/imagem300x300-aula4.png" alt="Praia da Urca com o céu nublabo. Na areia está sentada uma moça conteplando a natureza." class="img-thumbnail rounded mx-auto d-block">
+                        <img src="imagem300x300-aula4.png"
+                            alt="Praia da Urca com o céu nublabo. Na areia está sentada uma moça conteplando a natureza."
+                            class="img-thumbnail rounded mx-auto d-block">
                         <Figcaption class="text-center">Imagem1. frente-fria</Figcaption>
                     </figure>
 
@@ -142,7 +149,8 @@
 
                 <article class="sinusite" id="sinusite">
                     <figure>
-                        <img src="imagens/imagem300x300-aula4.png" alt="Mulher com cara de dor, assoando o nariz" class="img-thumbnail rounded mx-auto d-block">
+                        <img src="imagem300x300-aula4.png" alt="Mulher com cara de dor, assoando o nariz"
+                            class="img-thumbnail rounded mx-auto d-block">
                         <Figcaption class="text-center">Imagem2. Sinusite ataca</Figcaption>
                     </figure>
 
@@ -170,18 +178,30 @@
             <nav class="menu-secundario">
                 <h3>Links Utéis</h3>
                 <ul>
-                    <li class="list-group-item list-group-item-action list-group-item-light"><a href="https://globo.com" target="_blank" class="link-danger link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover ">Globo G1</a></li>
-                    <li class="list-group-item list-group-item-action list-group-item-light"><a href="https://rj.senac.br" target="_blank" class="link-danger link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover">Senac RJ</a></li>
-                    <li class="list-group-item list-group-item-action list-group-item-light"><a href="https://r7.com" target="_blank" class="link-danger link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover">Record R7</a></li>
+                    <li class="list-group-item list-group-item-action list-group-item-light"><a href="https://globo.com"
+                            target="_blank"
+                            class="link-danger link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover ">Globo
+                            G1</a></li>
+                    <li class="list-group-item list-group-item-action list-group-item-light"><a
+                            href="https://rj.senac.br" target="_blank"
+                            class="link-danger link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover">Senac
+                            RJ</a></li>
+                    <li class="list-group-item list-group-item-action list-group-item-light"><a href="https://r7.com"
+                            target="_blank"
+                            class="link-danger link-offset-2 link-underline-opacity-0 link-underline-opacity-25-hover">Record
+                            R7</a></li>
                 </ul>
             </nav>
             <div class="text-center ">
                 <Figure>
-                    <img src="imagens/miss.png"
-                    alt="Imagem da autora do blog. Hosana é uma preta mau humorada, que está com a cara fechada mas continua linda" class="img-thumbnail rounded mx-auto d-block rounded-circle img-thumbnail mx-auto d-block" width="150px">
+                    <img src="miss.png"
+                        alt="Imagem da autora do blog. Hosana é uma preta mau humorada, que está com a cara fechada mas continua linda"
+                        class="img-thumbnail rounded mx-auto d-block rounded-circle img-thumbnail mx-auto d-block"
+                        width="150px">
                 </Figure>
                 <h4 style="font-style: italic;">Hosana Nazarino</h4>
-                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quidem Fdolore nemo placeat quia.
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quidem
+                    Fdolore nemo placeat quia.
                     Vitae reprehenderit temporibus, modi voluptatibus voluptate esse vero harum optio exercitationem
                     adipisci commodi corrupti dignissimos? Iste?
                 </p>
@@ -198,15 +218,15 @@
                     </div>
                     <!--E-mail-->
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">Digite seu e-mail.</div>
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Digite seu e-mail.</div>
                     </div>
                     <!--Mensagem-->
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
+                    </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
@@ -214,8 +234,52 @@
     </div>
 
     <!--Rodapé do site-->
-    <footer>
-        <p>Meu Blog foi desenvolvido por <span>Hosana Nazarino</span>. &copy2024</p>
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <p class="text-body-secondary">©
+        </div>
+
+        <div class="col mb-3">
+
+        </div>
+
+        <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
